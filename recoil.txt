@@ -1,0 +1,19 @@
+1- proje dosyası oluştur
+2- recoil kurulumu   >>> yarn add recoil
+3- RecoilJS ile state’leri yönetebilmek için <App> bileşenini <RecoilRoot> bileşeni ile çevrele  (index.js dosyasında yapılacak)
+4- atoms klasörü oluştur
+5- atom oluştur
+    -recoil i import et
+    -atomu oluştur
+
+        const ATOM_NAME = atom({
+            key:'ATOM_NAME',
+            default:'DEFAULT VALUES'
+        });
+
+        export default ATOM_NAME;
+
+6- kullanmak istediğimiz yerde recoili ve ilgili atomu import ediyoruz
+7- recoil state i oluşturuyoruz
+    >>> const [ ATOM, setATOM ] = useRecoilState(ATOM_NAME);
+
